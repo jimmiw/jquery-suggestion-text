@@ -1,0 +1,34 @@
+h1. About
+
+This plugin was extracted for a project I was doing with a friend of mine. We needed a way to have a suggestion in an input field, to get a user started faster. This plugin DOES NOT use fancy CSS3 transformations or HTML5 for anything, ensuring your IE customer will be able to see the text as well.
+
+h2. Usage
+
+To use this plugin, add it to you javascript include in the <head> section of you HTML page.
+
+To add the script to an input field, simply do the following:
+
+    $('input').suggest();
+    
+h3. Specify options to the plugin!
+
+You can add your own help text, by passing in a hash object.
+
+    $('input').suggest({
+      text: 'This is my custom help text'
+    });
+    
+The the given text is displayed to help the user make a choice.
+
+h3. Default options
+
+By default a css class is added to the field the plugin is initialized on, if either no input is given or the help text is shown.
+The css class is called *blurry*.
+
+h3. Change the CSS class
+
+You can change the CSS class by adding the following to your hash:
+
+    $('input').suggest({
+      cssClass: 'custom_css_class'
+    });
